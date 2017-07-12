@@ -1,0 +1,14 @@
+<div (click)="remove()">
+  <p>
+    From: {{ mail.from }}
+  </p>
+  <p *ngIf="mail.title">
+    Title: {{ mail.title }}
+  </p>
+  <p>
+    {{ mail.body }}
+  </p>
+  <p>
+    Received: {{ birthday | receiptTime }}
+  </p>
+</div>
